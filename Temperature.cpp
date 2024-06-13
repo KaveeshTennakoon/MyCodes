@@ -1,3 +1,21 @@
+/*
+This is a code that takes temperature of a human 12 times a day with
+2 hours of intervals (0, 2, 4, 6, ...) and record it in celsius.
+
+Temperature is validated to be between 35 and 42 celsius.
+
+Celsius temperature is converted to Fahrenheit.
+
+At the end of the recording of temprature, the summary of the readings is 
+given including minimum, maximum and average temperature readings in 
+Fehrenheit.
+
+Finally a graph is given according to the temperature measurements and 
+hours repectively.
+*/
+
+
+
 #include <iostream>
 #include <iomanip>
 #include <limits>
