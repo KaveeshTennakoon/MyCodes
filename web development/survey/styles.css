@@ -1,0 +1,63 @@
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: rgba(5, 5, 140, 0.41);
+    line-height: 1.5;
+    border-radius: 6px;
+  }
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background.jpeg);
+    background-size: cover;
+    color: white;
+    background-color: aqua;
+}
+
+fieldset {
+    border: none;
+}
+
+input, textarea, .dropdown {
+    padding: 4px;
+    font-size: 1em;
+    background-color: rgb(234, 224, 224);
+    color: grey;
+    font-weight: bold;
+}
+
+#name, #email, #suggestions {
+    width: 97%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+text1 {
+    margin: 100px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 97%;
+    height: 2.3em;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(7, 165, 41);
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: white;
+    font-family: Arial;
+}
+
+p {
+    color: red;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="survey.php" method="post" id="survey-form">
+
+      <fieldset>
+          <label for="name" id="name-label">Name </label><br>
+          <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br>
+          <label for="email" id="email-label">Email </label><br>
+          <input type="email" id="email" name="email" required placeholder="Enter Your Email"><br>
+          <label for="number" id="age">Age </label><br>                <input type="number" id="number" name="number" max="120" min="10" placeholder="Age"><br>
+      </fieldset>
+      <fieldset>
+          <label for="dropdown">Which option best describes your current role?</label><br>
+        <select id="dropdown" class="dropdown">
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select><br>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend this survey to a friend?</label><br>
+        <input type="radio" id="yes" value="yes" name="recommend">
+        <label for="yes"> Yes</label><br>
+        <input type="radio" id="no" value="no" name="recommend">
+        <label for="no"> No</label><br>
+        <input type="radio" id="not-sure" value="not-sure" name="recommend">
+        <label for="not-sure"> Not Sure</label><br>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)</label><br>
+        <input type="checkbox" id="frontend" value="frontend" name="frotend">
+        <label for="frontend">Front-end Projects</label><br>
+        <input type="checkbox" id="backend" value="backend" name="backend">
+        <label for="backend">Back-end Projects</label><br>
+        <input type="checkbox" id="visualization" value="visualization" name="visualization">
+        <label for="visualization">Data Visualization</label><br>
+        <input type="checkbox" id="challanges" value="challanges" name="challanges">
+        <label for="challanges">Challenges</label><br>
+        <input type="checkbox" id="opensource" value="opensource" name="opensource">
+        <label for="opensource">Open Source Community</label><br>
+        <input type="checkbox" id="gitterhelp" value="gitterhelp" name="gitterhelp">
+        <label for="gitterhelp">Gitter help room</label><br>
+        <input type="checkbox" id="videos" value="videos" name="videos">
+        <label for="videos">Videos</label><br>
+        <input type="checkbox" id="meetups" value="meetups" name="meetups">
+        <label for="meetups">City meetups</label><br>
+        <input type="checkbox" id="wiki" value="wiki" name="wiki">
+        <label for="wiki">Wiki</label><br>
+        <input type="checkbox" id="fourm" value="fourm" name="fourm">
+        <label for="fourm">Fourm</label><br>
+        <input type="checkbox" id="course" value="course" name="course">
+        <label for="course">Addition Course</label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestions">Any comments or suggestions?</label><br>
+        <textarea name="suggestions" id="suggestions" rows="5" placeholder="Your ideas..."></textarea>
+        <br><input type="submit" value="Submit">    
+      </fieldset>
+    </form>
+  </body>
+</html>
